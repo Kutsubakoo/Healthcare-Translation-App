@@ -37,7 +37,6 @@ if ('webkitSpeechRecognition' in window) {
 
 function translateText(text) {
     const targetLanguage = languageSelect.value; // Get the selected language
-    // Use a translation API (like MyMemory) to get the translation
     fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|${targetLanguage}`)
         .then(response => response.json())
         .then(data => {
