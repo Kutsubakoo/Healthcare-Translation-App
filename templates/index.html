@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Translation App</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voice Translation App</h1>
+        <h2>Transcription</h2>
+        <textarea id="transcription" placeholder="Your transcribed text will appear here..."></textarea>
+
+        <h2>Select Language for Translation</h2>
+        <select id="language-select">
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="fr">French</option>
+        </select>
+
+        <h2>Translation</h2>
+        <textarea id="translation" placeholder="The translation will appear here..." readonly></textarea>
+
+        <button id="start-button">Start Speaking</button>
+        <button id="read-translation-button">Read Translation</button>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+</html>
